@@ -1,4 +1,4 @@
-SELECT (properties.*), (reservations.*), AVG(rating)
+SELECT (properties.*), (reservations.*), AVG(rating) AS avg_rating
 FROM property_reviews
 JOIN properties ON property_id = properties.id
 JOIN reservations ON reservation_id = reservations.id
